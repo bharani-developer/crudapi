@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class CountryModel extends Model
 {
-   protected $table = "_Z_country";
-   protected $fillable =[
+    public $timestamps = false;
+    protected $table = "_Z_country";
+    protected $fillable =[
        'iso',
        'name',
        'dname',
@@ -15,7 +16,7 @@ class CountryModel extends Model
        'position',
        'numcode',
        'phonecode',
-       'createdd',
+       'created',
        'register_by',
        'modified',
        'modified_by',
